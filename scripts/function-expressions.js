@@ -1,8 +1,24 @@
+const operationMultiply = function(num1, num2) {
+    return num1 * num2;
+}
+
+const operationDivide = function(num1, num2) {
+    return num1 / num2;
+}
+
+const operationAdd = function(num1, num2) {
+    return num1 + num2;
+}
+
+const operationSubtract = function(num1, num2) {
+    return num1 - num2;
+}
+
 const operations = {
-    multiply: (num1, num2) => num1 * num2,
-    divide: (num1, num2) => num1 / num2,
-    add: (num1, num2) => num1 + num2,
-    subtract: (num1, num2) => num1 - num2,
+    multiply: operationMultiply,
+    divide: operationDivide,
+    add: operationAdd,
+    subtract: operationSubtract,
 }
 
 function calculate(num1, num2, operation) {
